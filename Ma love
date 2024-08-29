@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surpresa Romântica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="animated-text">Eu te amo, [Nome dela]!</h1>
+        <p class="rotating-text">Você é a luz da minha vida, a razão do meu sorriso, e eu quero estar ao seu lado para sempre.</p>
+        <p class="rotating-text">Cada momento com você é especial e eu sou grato por ter você na minha vida.</p>
+        <p class="rotating-text">Eu te amo mais do que palavras podem expressar. Para sempre e sempre!</p>
+    </div>
+</body>
+</html>
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4e6ff;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+}
+
+.animated-text {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: pulse 2s infinite;
+}
+
+.rotating-text {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    animation: rotate 10s infinite linear;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
